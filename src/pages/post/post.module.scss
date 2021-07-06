@@ -5,7 +5,7 @@
   }
   
   .post {
-    h2{
+    h2 {
       font-size: 2.25rem;
       color: var(--heading);
       margin: 3rem 0;
@@ -21,7 +21,7 @@
       color: var(--highlight)
     }
   
-    strong{
+    strong {
       font-weight: 700;
       color:var(--body)
     }
@@ -79,7 +79,7 @@
     justify-content: space-between;
     border-top: 1px solid var(--border);
   
-    h3{
+    h3 {
       font-size: 1.125rem;
       font-weight: 400;
       color: var(--heading);
@@ -95,7 +95,7 @@
       padding-top: 3rem;
     }
   
-    div + div{
+    div + div {
       text-align: right;
   
     }

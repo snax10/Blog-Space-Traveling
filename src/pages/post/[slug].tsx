@@ -1,4 +1,3 @@
-
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { format } from 'date-fns';
 import { RichText } from 'prismic-dom';
@@ -6,7 +5,7 @@ import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 import { ptBR } from 'date-fns/locale';
 import { useRouter } from 'next/router';
 import Prismic from '@prismicio/client';
-import Cookies from 'js-cookie';
+
 import Link from 'next/link';
 import Header from '../../components/Header';
 
@@ -14,7 +13,7 @@ import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
-import Comments from '../../components/Comments';
+
 
 interface Post {
   first_publication_date: string | null;
@@ -153,8 +152,6 @@ export default function Post({
             </div>
           )}
         </section>
-
-        <Comments />
 
         {preview && (
           <aside>
